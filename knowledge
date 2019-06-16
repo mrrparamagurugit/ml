@@ -1,0 +1,2 @@
+one epoch - one iteration over entire data
+one step - one update of the parameters
