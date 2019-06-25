@@ -1,2 +1,12 @@
 one epoch - one iteration over entire data
 one step - one update of the parameters
+
+Issues with logistic neurons:
+* logistic neurons gets saturated at ends. ( see sigmoid diagram , it will saturate to 1 in the right side , saturate to 0 at left side). So 
+  derivatives will be zero on saturated neurons. ( f'(x) = f(x) * ( 1-f(x)) ).so saturated neurons cause gradients to vanish.
+* logistic neuron is not zero-centered. that means it will never be negative ( see sigmoid diagram , the y value will be always 0 to 1 . it never
+  be negative ). so all the gradients of weights to a particular neuron will be either positive or negative.(keep in mind that we are coming in 
+  reverse direction , from top to bottom for gradients. the path from top will be same for all gradients of weights of a particular neuron) it never be like one gradient is positive
+  and one is negative.
+
+
