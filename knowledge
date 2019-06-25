@@ -8,5 +8,31 @@ Issues with logistic neurons:
   be negative ). so all the gradients of weights to a particular neuron will be either positive or negative.(keep in mind that we are coming in 
   reverse direction , from top to bottom for gradients. the path from top will be same for all gradients of weights of a particular neuron) it never be like one gradient is positive
   and one is negative.
+* logistic function is computationally expensize ( because of e power x )
 
+properties of tanh:
+* tanh neuron also saturates at ends. so gradients will vanish.
+* tanh is zero centered. that means one gradient of weight of a particular neuron can go negative and the other gradeint of weight can go positive.
+* tanh also computationally expensive. ( because of e power x )
 
+RelU:
+
+properties of RelU: f(x) = max(0,x)
+* RelU neuron does not saturate at positive region.
+* But not zero-centered.
+* easy to compute ( no e power x )
+
+Relu Issues:
+* RelU neuron is saturated at negative region
+* Once if a RelU neuron is dead then it will be dead forever. ( f(x) = max(0, W1x1+W2x2+b) , if b becomes very large negative then f(x) will be 0 always)
+
+Relu Advises:
+* Initialize a large bias term.
+
+Leaky RelU : f(x) = max(0.01x,x)
+
+Properties:
+* will not saturate
+* close to zero-centered.
+* easy to compute ( no e power x )
+* will not die ( 0.01x ensures that at least small gradient flows )
