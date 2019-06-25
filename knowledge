@@ -36,3 +36,13 @@ Properties:
 * close to zero-centered.
 * easy to compute ( no e power x )
 * will not die ( 0.01x ensures that at least small gradient flows )
+
+Usages:
+tanh - RNN
+relu, leaky relu - CNN
+
+INITIALIZATION:
+
+* never initialize zero , equal , large values
+* Xavier - tanh, logistic
+* He - Relu and Leaky Relu
