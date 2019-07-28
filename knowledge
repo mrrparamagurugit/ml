@@ -46,3 +46,17 @@ INITIALIZATION:
 * never initialize zero , equal , large values
 * Xavier - tanh, logistic
 * He - Relu and Leaky Relu
+
+
+
+BIAS AND VARIANCE:
+
+BIAS:
+
+bias is how good our model's prediction is. We can also think this as our training accuracy. If our training accuracy is less then our bias is more.
+If training accuracy is high then the bias is low.
+
+Variance:
+
+variance is the difference between the training and test accuracy. If training accuracy is high and test accuracy is less then we can say
+our model has high variance.
