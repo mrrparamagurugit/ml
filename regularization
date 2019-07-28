@@ -1,0 +1,9 @@
+Why do we need regularization:
+
+If the model is complex , then the overfitting will happen. So we will have high train accuracy but less test accuracy. So we introduce 
+regularization to avoid that.
+
+Overfitting:
+
+Overfitting means the model will learn the parameters based on the training sets we provide. It will do well for the training set. But it will
+perform very poorly for the test datas. Meaning, the model will fit the parameters strictly for the training set.
