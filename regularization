@@ -21,7 +21,7 @@ EARLY STOPPING:
 * early stopping is not good for me with "he" and "relu" ,"leaky_relu".
 
 
-* In our exercise, when we increase the features from 2 to 4, we are getting low bias and low variance without regularization.
-* In our exercise , when we add small regularisation term , we are getting very low bias and very low variance. ( with 4 features as above).
+* In our exercise(Exercise_2_OverfittingAndRegularisation), when we increase the features from 2 to 4, we are getting low bias and low variance without regularization.
+* In our exercise(Exercise_2_OverfittingAndRegularisation) , when we add small regularisation term , we are getting very low bias and very low variance. ( with 4 features as above).
 But a high regularisation is increasing bias.
-* In our exercise , a low noise is giving low bias and low varinace.
+* In our exercise(Exercise_2_OverfittingAndRegularisation) , a low noise is giving low bias and low varinace.
