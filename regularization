@@ -7,3 +7,15 @@ Overfitting:
 
 Overfitting means the model will learn the parameters based on the training sets we provide. It will do well for the training set. But it will
 perform very poorly for the test datas. Meaning, the model will fit the parameters strictly for the training set.
+
+* When the lambda ( regularisation term) is high , we will get low variance but high bias.
+
+ADDING NOISE:
+
+* when adding noise to input features, variance is getting reduced.
+* high values of noise is giving low variance. very large noise value is giving low variance but high bias.
+
+
+EARLY STOPPING:
+
+* early stopping is not good for me with "he" and "relu" ,"leaky_relu".
