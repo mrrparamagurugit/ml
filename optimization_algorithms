@@ -1,0 +1,28 @@
+ADAPTIVE LEARNING RATE:
+
+change in weight(w) is directly propotional to gradient of the weight ( dw ). similarly dw is directly propotionl to x(input feature/input to a neuron).
+
+* for sparse features we need high learning rate ( sparse means a feature will be zero most of the times )
+* for dense features we need low learning rate. ( dense means a feature will be non-zero most of the times )
+
+For example, we need to be so attentive in class if something is taught very rarely.
+
+
+ADAGRAD: ( formula attached)
+
+to have high learning rate for sparse features and low learning rate for dense features.
+
+RMSPROP: (formula attached )
+
+Because of low learning rate(denominator becomes high) for dense features , weights will not be updated. So we have added decaying history, so that denominator will not go very high.
+
+
+ADAM: ( formila attached )
+
+* In momentum based GD , history is used as cummulative of history of derivatives. So using history we can move faster in the flat regions of loss.
+
+* In RMSPROP, ADAGRAD history is used to control the denominator from becoming so large. large denominator makes the learning rate near to zero which is results in NO update on weight.
+
+ADAM combines the advantages of RMSPROP and Momentum based GD.
+
+In the end ADAM does bias correction, so that at the beginning of the training the updates dont behave weird.
