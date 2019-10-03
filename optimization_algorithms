@@ -16,6 +16,7 @@ RMSPROP: (formula attached )
 
 Because of low learning rate(denominator becomes high) for dense features , weights will not be updated. So we have added decaying history, so that denominator will not go very high.
 
+disadvantage: for high learning rate and high derivatives , weights will be oscillating in RMSPROP.
 
 ADAM: ( formila attached )
 
